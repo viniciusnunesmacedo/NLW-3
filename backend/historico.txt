@@ -1,0 +1,25 @@
+-- cria o primeiro arquivo da migration
+yarn typeorm migration:create -n create_orphanages
+
+-- executa o arquivo de migrations
+yarn typeorm migration:run
+
+-- reverte o migrations
+yarn typeorm migration:revert
+
+-- cria o proximo migration
+yarn typeorm migration:create -n create_images
+
+-- bilioteca de imagens
+yarn add multer
+
+-- capturar erros assincronos
+yarn add express-async-errors
+
+-- validação de dados
+yarn add yup
+yarn add @types/yup -D
+
+-- cors
+yarn add cors
+yarn add @types/cors -D
